@@ -1,0 +1,25 @@
+{
+  "name": "Mig",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "A Chrome Ajax interceptor extension",
+  "background": {
+    "scripts": ["background/index.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Mig"
+  },
+  "options_ui": {
+    "page": "dashboard.html",
+    "open_in_tab": true,
+    "Chrome_style": true
+  },
+  "content_scripts": [
+    {
+      "js": ["inject/index.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
