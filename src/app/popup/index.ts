@@ -1,7 +1,7 @@
 console.log('popup')
 // open dashboard page
-if (Chrome.runtime.openOptionsPage) {
-  Chrome.runtime.openOptionsPage()
+if (chrome.runtime.openOptionsPage) {
+  chrome.runtime.openOptionsPage()
 } else {
-  window.open(Chrome.runtime.getURL('options.html'))
+  window.open(chrome.runtime.getURL('options.html'))
 }

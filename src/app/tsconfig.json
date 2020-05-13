@@ -6,12 +6,11 @@
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "lib": ["ESNext", "DOM"],
-    "types": ["chrome"],
     "strict": true,
     "allowJs": true,
     "declaration": true,
     "noUnusedLocals": true,
     "esModuleInterop": true
   },
-  "include": ["src"]
+  "include": ["./"]
 }
